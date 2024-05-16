@@ -1,12 +1,14 @@
 import './App.css';
-import NavigationBar from './components/NavigationBar';
+import './components/landingpage.css';
+import RoutesIndex from './routes';
 
 function App() {
   return (
-    <div>
-      <NavigationBar />
+    <div className="App">
+      <RoutesIndex />
     </div>
   );
 }
 
-export default App;
+export default App; 
+

@@ -1,0 +1,593 @@
+.logo {
+    border-radius: 25%;
+    width: 70px;
+    height: 70px;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.5s ease;
+}
+
+.navbar.scrolled {
+    background-color: #000; /* Ganti dengan warna yang Anda inginkan */
+  }
+
+.nav-link {
+    color: white !important; /* Mengubah warna teks Nav.Link menjadi putih */
+}
+
+.nav-link:hover {
+    text-decoration: underline; /* Menambahkan garis bawah saat Nav.Link di-hover */
+    text-decoration-thickness: 3px; /* Mengatur ketebalan garis bawah */
+    text-underline-offset: 20px; /* Mengatur jarak antara teks dan garis bawah */
+}
+
+.tabel {
+    margin-top: 4px;
+    margin-left: 300px;  
+}
+
+.dewan {
+    position: absolute; 
+    height: 10px;
+    bottom: 550px; 
+    left: 55px;
+    font-family: Figtree;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: normal;
+    text-align: left;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.dpp {
+    position: absolute;
+    bottom: 300px;
+    left: 55px;
+    font-family: Figtree;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 28.8px;
+    text-align: left;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+
+
+}
+
+.umkm{
+    position: absolute;
+    bottom: 230px;
+    left: 55px;
+    font-family: Figtree;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+  
+.datagambar{
+    width: 100%;
+    height: 50%;
+    padding: 150px;
+}
+
+.judul{
+    background: linear-gradient(284.05deg, #276EF1 10.59%, #0D5CB6 89.41%);
+    position: absolute;
+    width: 70%;
+    height: 430px;
+    margin-top: 100px;
+    margin-left: 55px;
+    border-radius: 50px;
+    z-index: 1; /* Menambahkan ini akan membuat .visimisi berada di depan .gambarvisi */
+}
+
+.judul1{
+    margin-top: 80px;
+    margin-left: 90px;
+    font-family: Figtree;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 48px;
+    text-align: left;
+
+}
+
+.judul2{
+    margin-top: 30px;
+    margin-left: 90px;
+    font-family: Figtree;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+}
+
+.judul3{
+    margin-top: 30px;
+    margin-left: 90px;
+    font-family: Figtree;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 19.2px;
+    text-align: left;
+}
+
+.gambar1, .gambar2{
+    position: relative;
+    margin-top: 220px;
+    z-index: 2; /* Menjadikan gambar berada di depan .judul */
+}
+
+.gambar3, .gambar4{
+    position: relative;
+    margin-top: 30px;
+    z-index: 2; /* Menjadikan gambar berada di depan .judul */
+}
+
+.angka1, .angka2, .angka3, .angka4, .kata1, .kata2, .kata3, .kata4 {
+    position: absolute; /* Menjadikan paragraf dan angka berposisi absolut terhadap gambar */
+    bottom: 10px; /* Mengatur posisi paragraf dan angka di tengah gambar */
+    left: 10px; /* Mengatur posisi paragraf dan angka di tengah gambar */
+}
+
+.kata5{
+    margin-top: 60px;
+    font-family: Figtree;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 28.8px;
+    text-align: left;
+}
+
+.tombol1{
+    width: 100px; /* Lebar button */  
+    height: 40px;  
+    background: linear-gradient(270deg, #1EC12E 0%, #4573A7 77.5%);
+    ; /* Warna latar belakang button */
+    border: none; /* Menghapus border default */
+    color: white; /* Warna teks button */
+    padding: 5px 16px; /* Padding di sekitar teks */
+    text-align: center; /* Penjajaran teks */
+    text-decoration: none; /* Menghapus dekorasi teks */
+    display: inline-block;
+    font-size: 16px; /* Ukuran teks */
+    margin: 4px 2px;
+    cursor: pointer; /* Mengubah cursor menjadi pointer saat mouse berada di atas button */
+    border-radius: 100px; /* Membuat sudut button menjadi bulat */
+}
+
+.tombol button {
+    width: 300px; /* Lebar button */  
+    height: 50px;  
+    background: linear-gradient(270deg, #1EC12E 0%, #4573A7 77.5%);
+    ; /* Warna latar belakang button */
+    border: none; /* Menghapus border default */
+    color: white; /* Warna teks button */
+    padding: 10px 32px; /* Padding di sekitar teks */
+    text-align: center; /* Penjajaran teks */
+    text-decoration: none; /* Menghapus dekorasi teks */
+    display: inline-block;
+    font-size: 16px; /* Ukuran teks */
+    margin: 4px 2px;
+    cursor: pointer; /* Mengubah cursor menjadi pointer saat mouse berada di atas button */
+    border-radius: 100px; /* Membuat sudut button menjadi bulat */
+}
+.visimisi{
+    background: linear-gradient(144.18deg, #059921 2.29%, #38DB29 97.71%);
+    position: absolute;
+    width: 50%;
+    height: 710px;
+    margin-top: 50px;
+    margin-left: 465px;
+    border-radius: 50px;
+    z-index: 2; /* Menambahkan ini akan membuat .visimisi berada di depan .gambarvisi */
+}
+
+.visi{
+    margin-left: 50px;
+    margin-top: 40px;
+    font-family: Figtree;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 70.2px;
+    text-align: left;
+
+}
+
+.katavisi{
+    margin-left: 50px;
+    margin-right: 100px;
+    font-family: Figtree;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 28.8px;
+    text-align: left;
+}
+
+.misi{
+    margin-left: 50px;
+    margin-top: 30px;
+    font-family: Figtree;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 70.2px;
+    text-align: left;
+}
+
+.katamisi{
+    margin-right: 100px;
+    margin-left: 50px;
+    font-family: Figtree;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 28.8px;
+    text-align: left;
+}
+
+.gambarvisi{
+    width: 50%;
+    height: 800px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1; /* Menambahkan ini akan membuat .gambarvisi berada di belakang .visimisi */
+}
+
+.judul5{
+   margin-top: 100px;
+   margin-left: 90px;
+   font-family: Figtree;
+    font-size: 76px;
+    font-weight: 800;
+    line-height: 115.2px;
+    text-align: left;
+    color: #276EF1;
+}
+
+.tahun{
+    margin-left: 90px;
+    font-family: Figtree;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    color: #3AA76D;
+}
+
+.icon1{
+    margin-top: 60px;
+    margin-left: 90px;
+    background: #FFE6E2;
+    border-radius: 10px !important; 
+    width: 40px;
+    height: 40px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.icon2{
+    background: #E3F8FA;
+    margin-bottom: 20px;
+    border-radius: 10px !important; 
+    width: 40px;
+    height: 40px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.icon3{
+    background: #F5E6FE;
+    margin-left: 90px;
+    margin-top: 40px;
+    border-radius: 10px !important; 
+    width: 40px;
+    height: 40px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.icon4{
+    background: #FFE6E2;
+    margin-bottom: -80px;
+    border-radius: 10px !important; 
+    width: 40px;
+    height: 40px;
+    gap: 0px;
+    opacity: 0px; 
+}
+
+.icon5{
+    background: #E3F8FA;
+    margin-left: 90px;
+    margin-top: 40px;
+    border-radius: 10px !important; 
+    width: 40px;
+    height: 40px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.icon6{
+    background: #FFF9DD;
+    margin-bottom: -80px;
+    border-radius: 10px !important; 
+    width: 40px;
+    height: 40px;
+    gap: 0px;
+    opacity: 0px; 
+}
+
+.icon7{
+    background: #F5E6FE;
+    margin-left: 90px;
+    margin-top: 40px;
+    border-radius: 10px !important; 
+    width: 40px;
+    height: 40px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.icon8{
+    background: #FBE7E3;
+    margin-bottom: -80px;
+    border-radius: 10px !important; 
+    width: 40px;
+    height: 40px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.icon9{
+    background: #FFF9DD;
+    margin-left: 90px;
+    margin-top: 40px;
+    border-radius: 10px !important; 
+    width: 40px;
+    height: 40px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.icon10{
+    background: #E3F8FA;
+    margin-bottom: -80px;
+    border-radius: 10px !important; 
+    width: 40px;
+    height: 40px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.icon11{
+    background: #FFE6E2;
+    margin-left: 90px;
+    margin-top: 40px;
+    border-radius: 10px !important; 
+    width: 40px;
+    height: 40px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.icon12{
+    background: #F5E6FE;
+    margin-bottom: -80px;
+    border-radius: 10px !important; 
+    width: 40px;
+    height: 40px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.icon13{
+    background: #FFF9DD;
+    margin-left: 90px;
+    margin-top: 40px;
+    border-radius: 10px !important; 
+    width: 40px;
+    height: 40px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.program2{
+    align-items: center;
+}
+
+.head{
+    margin-top: 50px;
+    margin-left: 20px;
+    font-family: Figtree;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: left;
+    color: #276EF1;
+}
+
+.paragraf{
+    margin-left: 20px;
+    font-family: Figtree;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    text-align: left;
+    color: #000000;
+
+}
+
+.head1{
+    margin-top: -50px;
+    margin-left: 150px;
+    font-family: Figtree;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: left;
+    color: #276EF1;
+}
+
+.paragraf1{
+    margin-left: 150px;
+    font-family: Figtree;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    text-align: left;
+    color: #000000;
+}
+
+.head3{
+    margin-top: -50px;
+    margin-left: 150px;
+    font-family: Figtree;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: left;
+    color: #276EF1;
+}
+
+.paragraf3{
+    margin-left: 150px;
+    font-family: Figtree;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    text-align: left;
+    color: #000000;
+}
+
+.head4{
+    margin-left: 60px;
+    font-family: Figtree;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: left;
+    color: #276EF1;
+}
+
+.paragraf4{
+    margin-top: 10px;
+    margin-left: 60px;
+    font-family: Figtree;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    text-align: left;
+    color: #000000;
+}
+
+.galeri {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+.gambar7, .gambar8 {
+    width: calc(50% - 10px);
+    height: auto;
+    border-radius: 20px 0px 0px 0px;
+    opacity: 1;
+    margin-bottom: 20px;
+  }
+  
+.gambar9, .gambar10 {
+    width: calc(50% - 10px);
+    height: auto;
+    border-radius: 20px 0px 0px 0px;
+    opacity: 1;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+.footer{
+    background: linear-gradient(180deg, #276EF1 0%, #2A4B71 100%);
+    position: relative;
+}
+
+.footersection{
+    padding: 6rem 10rem;
+}
+
+.footercontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.ftlink{
+    width: 150px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: white;
+}
+
+.containeremail{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: white;
+    padding: 6rem 2rem;   
+}
+
+.email{
+    padding: 10px;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    width: 90%;
+    margin-left: -5px;
+    margin-top: 20px;
+}
+
+.btnsubmit{
+  position: absolute;
+  margin-left: -125px;
+  margin-top: 22px;
+  border-radius: 30px;
+  height: 40px;
+  width: 10%;
+  background: linear-gradient(270deg, #1EC12E 0%, #4573A7 77.5%);
+  color: white;
+}
+
+.logo1{
+    width: 319px;
+    height: 319px;
+    margin-left: 30px;
+    margin-top: 150px;
+    border-radius: 20px;   
+}
+
+.pdewan{
+    margin-top: -100px;
+    margin-left: 450px;
+    font-family: Figtree;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 67.2px;
+    text-align: left;
+    
+}
