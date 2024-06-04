@@ -3,8 +3,6 @@
   box-sizing: border-box;
 }
 
-
-
 .logo {
     border-radius: 25%;
     width: 70px;
@@ -16,6 +14,10 @@
     width: 100vw;
     z-index: 1000;
     transition: background-color 0.5s ease;
+}
+
+.tabel{
+    margin-left: 200px;
 }
 
 
@@ -615,7 +617,7 @@
 }
 
 .ftlink{
-    width: 150px;
+    width: 250px;
     margin-bottom: 1rem;
     display: flex;
     justify-content: flex-start;
@@ -752,9 +754,10 @@
   /* css about */
 
   .about-paragraph{
+    margin-right: -300px;
     width: 100vw;
     font-family: Figtree;
-    font-size: 56px;
+    font-size: 40px;
     font-weight: 800;
     line-height: 67.2px;
     text-align: left;
@@ -762,7 +765,7 @@
   }
 
   .about-paragraph2{
-    width: 50%;
+    width: 80vw;
     font-family: Figtree;
     font-size: 24px;
     font-weight: 400;
@@ -871,9 +874,8 @@
 
 .program-paragraph{   
     width: 80vw;
-    margin-left: 100px;
     font-family: Figtree;
-    font-size: 36px;
+    font-size: 46px;
     font-weight: 800;
     line-height: 67.2px;
     text-align: left;    
@@ -883,7 +885,6 @@
 
   .program-paragraph2{   
     width:70vw;
-    margin-left: 100px;
     font-family: Figtree;
     font-size: 24px;
     font-weight: 400;
@@ -922,8 +923,8 @@
   }
 
   .icon16{
-    padding: 100px;
-    width: 100%;
+    padding: 105px;
+    width: 100vw;
   }
 
   .icon17{
@@ -972,7 +973,7 @@
 }
 
 .icon35{
-    width: 50vw;
+    width: 85vw;
     margin-left: 70px;
 }
 
@@ -1173,7 +1174,7 @@
   }
 
     .news-paragraph{
-        margin-left: -250px;
+        margin-left: 30px;
         font-family: Figtree;
         font-size: 56px;
         font-weight: 800;
@@ -1183,8 +1184,8 @@
     }
 
     .news-paragraph2{
-        width: 1000px;
-        margin-left: -250px;
+        width: 80vw;
+        margin-left: 30px;
         font-family: Figtree;
         font-size: 56px;
         font-weight: 800;
@@ -1259,7 +1260,7 @@
       }
 
       .activity-paragraph{
-        margin-left: -50px;
+        margin-left: 30px;
         font-family: Figtree;
         font-size: 56px;
         font-weight: 800;
@@ -1269,8 +1270,8 @@
       }
 
       .activity-paragraph2{
-        margin-left: -50px;
-        width: 1000px;
+        margin-left: 30px;
+        width: 80vw;
         font-family: Figtree;
         font-size: 56px;
         font-weight: 800;

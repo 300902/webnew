@@ -2,71 +2,61 @@ import NavigationBar from "./NavigationBar";
 import Image from "react-bootstrap/Image";
 import Pagination from "react-bootstrap/Pagination";
 import React, { useState } from "react";
-import gambar13Image from "../assets/image/gambar13.jpeg";
-import gambar14Image from "../assets/image/gambar14.jpeg";
-import gambar15Image from "../assets/image/gambar15.png";
-import gambar16Image from "../assets/image/gambar16.png";
-import gambar17Image from "../assets/image/gambar17.jpeg";
-import gambar18Image from "../assets/image/gambar18.png";
-import gambar19Image from "../assets/image/gambar19.jpeg";
-import gambar20Image from "../assets/image/gambar20.png";
-import gambar21Image from "../assets/image/gambar21.png";
-import gambar22Image from "../assets/image/gambar22.png";
 import Faq from "./Faq";
 import Footer from "./Footer";
 
 const News = () => {
   const newsItems = [
     {
-      image: gambar13Image,
+      image: "/assets/image/gambar13.jpeg",
       date: "Februari 19, 2024",
       paragraph: "UMKM Kuliner Beromzet Miliaran, Ini 5 Rahasianya!",
     },
     {
-      image: gambar14Image,
+      image: "/assets/image/gambar14.jpeg",
       date: "Februari 18, 2024",
       paragraph: "BNI Salurkan Kredit UMKM Rp 142,3 Triliun per September 2023",
     },
     {
-      image: gambar15Image,
+      image: "/assets/image/gambar15.png",
       date: "Februari 16, 2024",
       paragraph:
         "Erick Thohir : 30 Juta UMKM RI Perlu Didorong Masuk E-commerce",
     },
     {
-      image: gambar16Image,
+      image: "/assets/image/gambar16.png",
       date: "Februari 14, 2024",
       paragraph: "Kemenkop UKM Gandeng Blibli Dukung UMKM Naik Kelas",
     },
     {
-      image: gambar17Image,
+      image: "/assets/image/gambar17.jpeg",
       date: "Februari 12, 2024",
       paragraph: "Tips Jitu Meningkatkan Penjualan UMKM di Era Digital",
     },
     {
-      image: gambar18Image,
+      image: "/assets/image/gambar18.png",
       date: "Februari 9, 2024",
       paragraph: "5 Tantangan UMKM Indonesia di Era Digital",
     },
     {
-      image: gambar19Image,
+      image: "/assets/image/gambar19.jpeg",
       date: "Februari 7, 2024",
       paragraph:
         "Kisah Inspiratif UMKM : Dari Jualan Sate di Pinggir Jalan Kini Punya Restoran",
     },
     {
-      image: gambar20Image,
+      image: "/assets/image/gambar20.png",
       date: "Februari 5, 2024",
       paragraph: "Strategi UMKM Bertahan di Tengah Ancaman Resesi",
     },
     {
-      image: gambar21Image,
+      image: "/assets/image/gambar21.png",
       date: "Februaru 3, 2024",
       paragraph:
         "Pemerintah Luncurkan Program Baru untuk Dorong UMKM Naik Kelas",
     },
     {
-      image: gambar22Image,
+      image: "/assets/image/gambar22.png",
       date: "Februari 2, 2024",
       paragraph: "Pentingnya Digitalisasi bagi UMKM di Era New Normal",
     },

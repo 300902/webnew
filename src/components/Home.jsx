@@ -1,28 +1,5 @@
 import NavigationBar from "./NavigationBar";
 import Image from "react-bootstrap/Image";
-import gambar2Image from "../assets/image/gambar2.jpeg";
-import gambar3Image from "../assets/image/gambar3.jpeg";
-import gambar4Image from "../assets/image/gambar4.jpeg";
-import gambar5Image from "../assets/image/gambar5.jpg";
-import gambar6Image from "../assets/image/gambar6.jpeg";
-import gambar7Image from "../assets/image/gambar7.jpeg";
-import gambar8Image from "../assets/image/gambar8.jpeg";
-import gambar9Image from "../assets/image/gambar9.jpeg";
-import gambar10Image from "../assets/image/gambar10.jpeg";
-import icon1image from "../assets/vector/icon1.png";
-import icon2image from "../assets/vector/icon2.png";
-import icon3image from "../assets/vector/icon3.png";
-import icon4image from "../assets/vector/icon4.png";
-import icon5image from "../assets/vector/icon5.png";
-import icon6image from "../assets/vector/icon6.png";
-import icon7image from "../assets/vector/icon7.png";
-import icon8image from "../assets/vector/icon8.png";
-import icon9image from "../assets/vector/icon9.png";
-import icon10image from "../assets/vector/icon10.png";
-import icon11image from "../assets/vector/icon11.png";
-import icon12image from "../assets/vector/icon12.png";
-import icon13image from "../assets/vector/icon13.png";
-import icon14image from "../assets/vector/icon14.png";
 import Faq from "./Faq";
 import Footer from "./Footer";
 
@@ -44,7 +21,7 @@ function Home() {
           <div className="col-md-6">
             <div className="gambar1">
               <Image
-                src={gambar2Image}
+                src={"assets/image/gambar2.jpeg"}
                 className="img-fluid rounded"
                 alt="Image"
               />
@@ -57,7 +34,7 @@ function Home() {
           <div className="col-md-6">
             <div className="gambar2">
               <Image
-                src={gambar3Image}
+                src={"assets/image/gambar3.jpeg"}
                 className="img-fluid rounded"
                 alt="Image"
               />
@@ -72,7 +49,7 @@ function Home() {
           <div className="col-md-6">
             <div className="gambar3">
               <Image
-                src={gambar4Image}
+                src={"assets/image/gambar4.jpeg"}
                 className="img-fluid rounded"
                 alt="Image"
               />
@@ -85,7 +62,7 @@ function Home() {
           <div className="col-md-6">
             <div className="gambar4">
               <Image
-                src={gambar5Image}
+                src={"assets/image/gambar5.jpg"}
                 className="img-fluid rounded"
                 alt="Image"
               />
@@ -140,7 +117,7 @@ function Home() {
         </p>
       </div>
       <div>
-        <Image src={gambar6Image} className="gambarvisi" alt="Image" />
+        <Image src={"/assets/image/gambar6.jpeg"} className="gambarvisi" alt="Image" />
       </div>
 
       <div>
@@ -151,7 +128,7 @@ function Home() {
         <div className="row">
           <div className="col-md-6">
             <div className="program">
-              <Image src={icon2image} className="icon1" alt="Icon" />
+              <Image src={"/assets/vector/icon2.png"} className="icon1" alt="Icon" />
               <h2 className="head1">Mapping Database UMKM</h2>
               <p className="paragraf1">
                 Membangun database UMKM untuk
@@ -166,7 +143,7 @@ function Home() {
           </div>
           <div className="col-md-6">
             <div className="program2 d-flex align-items-starts p">
-              <Image src={icon1image} className="icon2" alt="Icon" />
+              <Image src={"/assets/vector/icon1.png"} className="icon2" alt="Icon" />
               <div>
                 <h2 className="head">Pelatihan Kapasitas Pelaku</h2>
                 <p className="paragraf">
@@ -185,7 +162,7 @@ function Home() {
         <div className="row">
           <div className="col-md-6">
             <div className="program">
-              <Image src={icon3image} className="icon3" alt="Icon" />
+              <Image src={"/assets/vector/icon3.png"} className="icon3" alt="Icon" />
               <h2 className="head3">Penguatan & Perluasan</h2>
               <p className="paragraf3">
                 Mengembangkan jaringan dan
@@ -200,7 +177,7 @@ function Home() {
           </div>
           <div className="col-md-6">
             <div className="program">
-              <Image src={icon4image} className="icon4" alt="Icon" />
+              <Image src={"/assets/vector/icon4.png"} className="icon4" alt="Icon" />
               <h2 className="head4">Pelatihan Calon Pelaku</h2>
               <p className="paragraf4">
                 Memberikan pendidikan dan pelatihan
@@ -215,7 +192,7 @@ function Home() {
         <div className="row">
           <div className="col-md-6">
             <div className="program">
-              <Image src={icon5image} className="icon5" alt="Icon" />
+              <Image src={"/assets/vector/icon5.png"} className="icon5" alt="Icon" />
               <h2 className="head3">Fasilitasi Pemasaran</h2>
               <p className="paragraf3">
                 Membantu mengimplementasikan
@@ -230,7 +207,7 @@ function Home() {
           </div>
           <div className="col-md-6">
             <div className="program">
-              <Image src={icon6image} className="icon6" alt="Icon" />
+              <Image src={"/assets/vector/icon6.png"} className="icon6" alt="Icon" />
               <h2 className="head4">Akses Permodalan</h2>
               <p className="paragraf4">
                 Memudahkan akses ke sumber dana dan
@@ -245,7 +222,7 @@ function Home() {
         <div className="row">
           <div className="col-md-6">
             <div className="program">
-              <Image src={icon7image} className="icon7" alt="Icon" />
+              <Image src={"/assets/vector/icon7.png"} className="icon7" alt="Icon" />
               <h2 className="head3">Penyediaan Bahan Baku</h2>
               <p className="paragraf3">
                 Menyederhanakan proses akses
@@ -258,7 +235,7 @@ function Home() {
           </div>
           <div className="col-md-6">
             <div className="program">
-              <Image src={icon8image} className="icon8" alt="Icon" />
+              <Image src={"/assets/vector/icon8.png"} className="icon8" alt="Icon" />
               <h2 className="head4">Akses Buyer</h2>
               <p className="paragraf4">
                 Menghubungkan UMKM dengan
@@ -275,7 +252,7 @@ function Home() {
         <div className="row">
           <div className="col-md-6">
             <div className="program">
-              <Image src={icon9image} className="icon9" alt="Icon" />
+              <Image src={"/assets/vector/icon9.png"} className="icon9" alt="Icon" />
               <h2 className="head3">Desain Packaging</h2>
               <p className="paragraf3">
                 Membantu UMKM dalam mendesain
@@ -290,7 +267,7 @@ function Home() {
           </div>
           <div className="col-md-6">
             <div className="program">
-              <Image src={icon10image} className="icon10" alt="Icon" />
+              <Image src={"/assets/vector/icon10.png"} className="icon10" alt="Icon" />
               <h2 className="head4">Perlindungan Hukum</h2>
               <p className="paragraf4">
                 Memberikan dukungan dalam
@@ -305,7 +282,7 @@ function Home() {
         <div className="row">
           <div className="col-md-6">
             <div className="program">
-              <Image src={icon11image} className="icon11" alt="Icon" />
+              <Image src={"/assets/vector/icon11.png"} className="icon11" alt="Icon" />
               <h2 className="head3">Legalitas</h2>
               <p className="paragraf3">
                 Memfasilitasi proses pengurusan izin
@@ -318,7 +295,7 @@ function Home() {
           </div>
           <div className="col-md-6">
             <div className="program">
-              <Image src={icon12image} className="icon12" alt="Icon" />
+              <Image src={"/assets/vector/icon12.png"} className="icon12" alt="Icon" />
               <h2 className="head4">Fasilitas Kerjasama</h2>
               <p className="paragraf4">
                 Mendorong kerjasama strategis antara
@@ -333,7 +310,7 @@ function Home() {
         <div className="row">
           <div className="col-md-6">
             <div className="program">
-              <Image src={icon13image} className="icon13" alt="Icon" />
+              <Image src={"/assets/vector/icon13.png"} className="icon13" alt="Icon" />
               <h2 className="head3">Jasa Distribusi Barang</h2>
               <p className="paragraf3">
                 Menawarkan layanan logistik dan
@@ -346,7 +323,7 @@ function Home() {
           </div>
           <div className="col-md-6">
             <div className="program">
-              <Image src={icon14image} className="icon10" alt="Icon" />
+              <Image src={"/assets/vector/icon14.png"} className="icon10" alt="Icon" />
               <h2 className="head4">R & D UMKM</h2>
               <p className="paragraf4">
                 Mendorong inovasi dan pengembangan
@@ -377,8 +354,8 @@ function Home() {
             alignItems:'end',
           }}
         >
-          <Image src={gambar7Image} className="gambar7" alt="Image" />
-          <Image src={gambar9Image} className="gambar9" alt="Image" />
+          <Image src={"/assets/image/gambar7.jpeg"} className="gambar7" alt="Image" />
+          <Image src={"/assets/image/gambar9.jpeg"} className="gambar9" alt="Image" />
         </div>
         <div
           style={{
@@ -387,8 +364,8 @@ function Home() {
             gap: 8,
           }}
         >
-          <Image src={gambar10Image} className="gambar10" alt="Image" />
-          <Image src={gambar8Image} className="gambar8" alt="Image" />
+          <Image src={"/assets/image/gambar10.jpeg"} className="gambar10" alt="Image" />
+          <Image src={"/assets/image/gambar8.jpeg"} className="gambar8" alt="Image" />
         </div>
       </div>
 

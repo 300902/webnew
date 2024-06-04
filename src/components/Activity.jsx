@@ -2,38 +2,34 @@ import NavigationBar from "./NavigationBar";
 import Image from "react-bootstrap/Image";
 import { Pagination } from "react-bootstrap";
 import React, { useState } from "react";
-import gambar23Image from "../assets/image/gambar23.jpeg";
-import gambar24Image from "../assets/image/gambar24.jpeg";
-import gambar25Image from "../assets/image/gambar25.jpeg";
-import gambar26Image from "../assets/image/gambar26.jpeg";
 import Faq from "./Faq";
 import Footer from "./Footer";
 
 const Activity = () => {
   const activityItems = [
     {
-      image: gambar23Image,
+      image: "/assets/image/gambar23.jpeg",
       paragraph:
         "Business Marketing Live Webinar",
       date: "Februari 7, 2024",
       time: "19 : 00 - Selesai",
     },
     {
-      image: gambar24Image,
+      image: "/assets/image/gambar24.jpeg",
       paragraph:
         "Digital Marketing Webinar",
       date: "Februari 5, 2024",
       time: "19 : 00 - Selesai",
     },
     {
-      image: gambar25Image,
+      image: "/assets/image/gambar25.jpeg",
       paragraph:
         "Business Marketing Live Webinar",
       date: "Februaru 3, 2024",
       time: "19 : 00 - Selesai",
     },
     {
-      image: gambar26Image,
+      image: "/assets/image/gambar26.jpeg",
       paragraph:
         "Marketing Strategies",
       date: "Februari 2, 2024",

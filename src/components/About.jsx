@@ -1,8 +1,5 @@
 import NavigationBar from "./NavigationBar";
 import Image from "react-bootstrap/Image";
-import gambar11Image from "../assets/image/gambar11.jpeg";
-import gambar6Image from "../assets/image/gambar6.jpeg";
-import strukturImage from "../assets/image/Struktur.png";
 import Faq from "./Faq";
 import Footer from "./Footer";
 
@@ -228,10 +225,10 @@ const About = () => {
         </p>
       </div>
 
-      <Image src={strukturImage} className="struktur" alt="Struktur" />
+      <Image src={"/assets/image/Struktur.png"} className="struktur" alt="Struktur" />
 
 
-      <Image src={gambar11Image} className="gambar11" alt="Gambar 11" />
+      <Image src={"/assets/image/gambar11.jpeg"} className="gambar11" alt="Gambar 11" />
 
       <div className="bg-tengah">
       </div>
@@ -281,7 +278,7 @@ const About = () => {
       </div>
 
       <div>
-        <Image src={gambar6Image} className="gambarvisi" alt="Image" />
+        <Image src={"/assets/image/gambar6.jpeg"} className="gambarvisi" alt="Image" />
       </div>
 
       <button className="btnjadi" type="submit">

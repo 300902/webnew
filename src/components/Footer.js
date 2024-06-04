@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Image from "react-bootstrap/Image";
-import logoImage from "../assets/image/logo.jpeg";
+
 
 const Footer = () => {
   return (
@@ -108,7 +108,7 @@ const Footer = () => {
           </div>
         </div>
         <Image
-          src={logoImage}
+          src="assets/image/logo.jpeg"
           className="d-inline-block align-top logo1"
           alt="Logo"
         />

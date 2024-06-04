@@ -2,14 +2,8 @@ import Container from "react-bootstrap/Container";
 import React, { useState, useEffect } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import logoImage from "../assets/image/logo.jpeg";
 import Image from "react-bootstrap/Image";
-import gambarImage from "../assets/image/gambar.png";
 import { useLocation, NavLink } from "react-router-dom";
-import aboutImage from "../assets/image/bgabout.jpeg"; // Change this to the path of your image
-import programImage from "../assets/image/bgprogram.jpeg"; // Ganti dengan path ke gambar untuk halaman Program
-import newsImage from "../assets/image/bgnews.jpeg"; // Ganti dengan path ke gambar untuk halaman Berita
-import activityImage from "../assets/image/bgactivity.jpeg"; // Ganti dengan path ke gambar untuk halaman Kegiatan
 
 function NavigationBar() {
   const location = useLocation();
@@ -56,14 +50,14 @@ function NavigationBar() {
         <Container>
           <Navbar.Brand href="/" clas>
             <Image
-              src={logoImage}
+              src={"/assets/image/logo.jpeg"}
               className="d-inline-block align-top logo"
               alt="Logo"
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ml-auto">
+          <Nav className="ml-auto tabel">
               <NavLink
                 exact
                 to="/"
@@ -117,14 +111,14 @@ function NavigationBar() {
         <Image
           src={
             isProgramPage
-              ? programImage
+              ? "assets/image/bgprogram.jpeg"
               : isAboutPage
-              ? aboutImage
+              ? "assets/image/bgabout.jpeg"
               : isNewsPage
-              ? newsImage
+              ? "assets/image/bgnews.jpeg"
               : isActivityPage
-              ? activityImage
-              : gambarImage
+              ? "assets/image/bgactivity.jpeg"
+              : "assets/image/gambar.png"
           }
           width="100%"
           height="auto"
