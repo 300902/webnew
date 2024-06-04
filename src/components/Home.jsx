@@ -23,6 +23,7 @@ import icon11image from "../assets/vector/icon11.png";
 import icon12image from "../assets/vector/icon12.png";
 import icon13image from "../assets/vector/icon13.png";
 import icon14image from "../assets/vector/icon14.png";
+import Faq from "./Faq";
 import Footer from "./Footer";
 
 function Home() {
@@ -47,9 +48,9 @@ function Home() {
                 className="img-fluid rounded"
                 alt="Image"
               />
-              <div className="angka1">100000000</div>
+              <div className="angka1">64,2 Jt</div>
               <p className="kata1">
-                Ini adalah paragraf yang ditambahkan di dalam gambar.
+                Unit
               </p>
             </div>
           </div>
@@ -60,9 +61,9 @@ function Home() {
                 className="img-fluid rounded"
                 alt="Image"
               />
-              <div className="angka2">100000000</div>
+              <div className="angka2">97%</div>
               <p className="kata2">
-                Ini adalah paragraf yang ditambahkan di dalam gambar.
+                Penyerapan Tenaga Kerja
               </p>
             </div>
           </div>
@@ -75,9 +76,9 @@ function Home() {
                 className="img-fluid rounded"
                 alt="Image"
               />
-              <div className="angka3">100000000</div>
+              <div className="angka3">15%</div>
               <p className="kata3">
-                Ini adalah paragraf yang ditambahkan di dalam gambar.
+                Ekspor Nasional
               </p>
             </div>
           </div>
@@ -88,9 +89,9 @@ function Home() {
                 className="img-fluid rounded"
                 alt="Image"
               />
-              <div className="angka4">100000000</div>
+              <div className="angka4">57%</div>
               <p className="kata4">
-                Ini adalah paragraf yang ditambahkan di dalam gambar.
+                Pendapatan Domestik Bruto
               </p>
             </div>
           </div>
@@ -359,16 +360,46 @@ function Home() {
         </div>
       </div>
 
-      <div className="row1">
-      <div className="galeri">
-        <Image src={gambar7Image} className="gambar7" alt="Image" />
-        <Image src={gambar8Image} className="gambar8" alt="Image" />
-        <Image src={gambar9Image} className="gambar9" alt="Image" />
-        <Image src={gambar10Image} className="gambar10" alt="Image" />
+      <div
+        style={{
+          marginTop: 100,
+          display: "flex",
+          gap: 8,
+          justifyContent:'center',
+          alignItems:'center',
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: 8,
+            alignItems:'end',
+          }}
+        >
+          <Image src={gambar7Image} className="gambar7" alt="Image" />
+          <Image src={gambar9Image} className="gambar9" alt="Image" />
+        </div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: 8,
+          }}
+        >
+          <Image src={gambar10Image} className="gambar10" alt="Image" />
+          <Image src={gambar8Image} className="gambar8" alt="Image" />
+        </div>
       </div>
-      </div>
-      <Footer />
 
+
+      <button className="btnjadi" type="submit">
+        JADI ANGGOTA PMKM PRIMA INDONESIA
+      </button>
+
+      <Faq />
+
+      <Footer />
     </>
   );
 }

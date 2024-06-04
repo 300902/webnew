@@ -5,6 +5,9 @@ import logoImage from "../assets/image/logo.jpeg";
 
 const Footer = () => {
   return (
+
+
+    
     <footer className="footer">
       <div className="footersection">
         <div className="footercontainer">
@@ -23,7 +26,9 @@ const Footer = () => {
                   Tentang
                 </Link>
               </li>
-              <li>
+              <li style={{
+                width: "200px",
+              }}>
                 <Link
                   to="/program-strategis"
                   style={{ textDecoration: "none", color: "white" }}
@@ -70,13 +75,13 @@ const Footer = () => {
             </ul>
           </div>
           <div className="ftlink">
-            <ul className="linkft" style={{ listStyle: "none" }}>
+            <ul className="linkft" style={{ listStyle: "none", width: "500px" }}>
               <li>
                 <Link
                   to="/berita"
-                  style={{ textDecoration: "none", color: "white" }}
+                  style={{ textDecoration: "none", color: "white", }}
                 >
-                  Email
+                  kontak@pmkm-prima.org
                 </Link>
               </li>{" "}
               {/* Pindahkan link email ke sini */}
@@ -85,7 +90,7 @@ const Footer = () => {
         </div>
         <div className="containeremail">
           <div className="emailhead">
-            <h4>
+            <h4 className="pemail">
               Silahkan masukkan email anda untuk mendapatkan
               <br />
               informasi terbaru terkait UMKM
@@ -107,13 +112,23 @@ const Footer = () => {
           className="d-inline-block align-top logo1"
           alt="Logo"
         />
-        <p className="pdewan"> DEWAN PIMPINAN PUSAT  </p>
+        <p className="pdewan"> DEWAN PIMPINAN PUSAT </p>
         <br />
-        <p> PERKUMPULAN
-            <br /> 
-            PENGUSAHA MIKRO KECIL
-            <br /> 
-            MENENGAH PRIMA INDONESIA  </p>
+        <p className="perkumpul">
+          {" "}
+          PERKUMPULAN
+          <br />
+          <br />
+          PENGUSAHA MIKRO KECIL
+          <br />
+          <br />
+          MENENGAH PRIMA INDONESIA{" "}
+        </p>
+
+        <p className="alamat">
+          Komplek AL, Jl. Teluk Betung No. 48 B Rawa Bambu, Pasar Minggu Jakarta
+          Selatan, 12520
+        </p>
       </div>
     </footer>
   );

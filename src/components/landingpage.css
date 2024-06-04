@@ -1,15 +1,23 @@
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+
+
 .logo {
     border-radius: 25%;
     width: 70px;
     height: 70px;
-}
+  }
 
 .navbar {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     z-index: 1000;
     transition: background-color 0.5s ease;
 }
+
 
 .navbar.scrolled {
     background-color: #000; /* Ganti dengan warna yang Anda inginkan */
@@ -25,15 +33,11 @@
     text-underline-offset: 20px; /* Mengatur jarak antara teks dan garis bawah */
 }
 
-.tabel {
-    margin-top: 4px;
-    margin-left: 300px;  
-}
 
 .dewan {
     position: absolute; 
     height: 10px;
-    bottom: 550px; 
+    margin-top: -530px;
     left: 55px;
     font-family: Figtree;
     font-size: 40px;
@@ -46,7 +50,7 @@
 
 .dpp {
     position: absolute;
-    bottom: 300px;
+    margin-top: -300px;
     left: 55px;
     font-family: Figtree;
     font-size: 20px;
@@ -62,7 +66,7 @@
 
 .umkm{
     position: absolute;
-    bottom: 230px;
+    margin-top: -230px;
     left: 55px;
     font-family: Figtree;
     font-size: 20px;
@@ -71,6 +75,30 @@
     text-align: left;
     color: #FFFFFF;
     box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+@media (max-width: 738px) {
+  .dewan{
+    /* Ukuran font lebih kecil untuk paragraf pada perangkat dengan lebar viewport kurang dari 600px */
+    font-size: 14px;
+    margin-top: -165px;
+  }
+}
+
+@media (max-width: 738px) {
+  .dpp{
+    /* Ukuran font lebih kecil untuk paragraf pada perangkat dengan lebar viewport kurang dari 600px */
+    font-size: 14px;
+    margin-top: -90px;
+  }
+}
+
+@media (max-width: 738px) {
+  .umkm{
+    /* Ukuran font lebih kecil untuk paragraf pada perangkat dengan lebar viewport kurang dari 600px */
+    font-size: 12px;
+    margin-top: -70px;
+  }
 }
 
   
@@ -123,6 +151,13 @@
     text-align: left;
 }
 
+@media (max-width: 718px) {
+  .judul1, .judul2, .judul3 {
+    /* Ukuran font lebih kecil untuk judul pada perangkat dengan lebar viewport kurang dari 600px */
+    font-size: 12px;
+  }
+}
+
 .gambar1, .gambar2{
     position: relative;
     margin-top: 220px;
@@ -135,10 +170,26 @@
     z-index: 2; /* Menjadikan gambar berada di depan .judul */
 }
 
-.angka1, .angka2, .angka3, .angka4, .kata1, .kata2, .kata3, .kata4 {
+ .kata1, .kata2, .kata3, .kata4 {
     position: absolute; /* Menjadikan paragraf dan angka berposisi absolut terhadap gambar */
-    bottom: 10px; /* Mengatur posisi paragraf dan angka di tengah gambar */
+    bottom: 0px; /* Mengatur posisi paragraf dan angka di tengah gambar */
+    left: 20px; /* Mengatur posisi paragraf dan angka di tengah gambar */
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+    color: #FFFFFF;  
+}
+
+.angka1, .angka2, .angka3, .angka4 {
+    position: absolute; /* Menjadikan paragraf dan angka berposisi absolut terhadap gambar */
+    bottom: 70px; /* Mengatur posisi paragraf dan angka di tengah gambar */
     left: 10px; /* Mengatur posisi paragraf dan angka di tengah gambar */
+    font-size: 96px;
+    font-weight: 800;
+    line-height: 48px;
+    text-align: left;
+    color: #FFFFFF;  
 }
 
 .kata5{
@@ -154,17 +205,26 @@
     width: 100px; /* Lebar button */  
     height: 40px;  
     background: linear-gradient(270deg, #1EC12E 0%, #4573A7 77.5%);
-    ; /* Warna latar belakang button */
+     /* Warna latar belakang button */
     border: none; /* Menghapus border default */
     color: white; /* Warna teks button */
-    padding: 5px 16px; /* Padding di sekitar teks */
+    /* padding: 5px 16px; Padding di sekitar teks */
     text-align: center; /* Penjajaran teks */
     text-decoration: none; /* Menghapus dekorasi teks */
     display: inline-block;
+
     font-size: 16px; /* Ukuran teks */
-    margin: 4px 2px;
     cursor: pointer; /* Mengubah cursor menjadi pointer saat mouse berada di atas button */
     border-radius: 100px; /* Membuat sudut button menjadi bulat */
+}
+
+
+@media (max-width: 718px) {
+  .tombol1 {
+    /* Ukuran lebih kecil untuk tombol pada perangkat dengan lebar viewport kurang dari 600px */
+    padding: 5px 10px;
+    font-size: 16px;
+  }
 }
 
 .tombol button {
@@ -188,8 +248,8 @@
     position: absolute;
     width: 50%;
     height: 710px;
+    margin-left: 35%;
     margin-top: 50px;
-    margin-left: 465px;
     border-radius: 50px;
     z-index: 2; /* Menambahkan ini akan membuat .visimisi berada di depan .gambarvisi */
 }
@@ -241,6 +301,7 @@
     border-radius: 10px;
     position: relative;
     z-index: 1; /* Menambahkan ini akan membuat .gambarvisi berada di belakang .visimisi */
+    margin-left: -700px;
 }
 
 .judul5{
@@ -265,7 +326,7 @@
 }
 
 .icon1{
-    margin-top: 60px;
+    margin-top: 10px;
     margin-left: 90px;
     background: #FFE6E2;
     border-radius: 10px !important; 
@@ -273,6 +334,7 @@
     height: 40px;
     gap: 0px;
     opacity: 0px;
+    float: left;
 }
 
 .icon2{
@@ -289,12 +351,12 @@
 .icon3{
     background: #F5E6FE;
     margin-left: 90px;
-    margin-top: 40px;
     border-radius: 10px !important; 
     width: 40px;
     height: 40px;
     gap: 0px;
     opacity: 0px;
+    float: left;
 }
 
 .icon4{
@@ -305,17 +367,18 @@
     height: 40px;
     gap: 0px;
     opacity: 0px; 
+    float: left;
 }
 
 .icon5{
     background: #E3F8FA;
     margin-left: 90px;
-    margin-top: 40px;
     border-radius: 10px !important; 
     width: 40px;
     height: 40px;
     gap: 0px;
     opacity: 0px;
+    float: left;
 }
 
 .icon6{
@@ -325,18 +388,19 @@
     width: 40px;
     height: 40px;
     gap: 0px;
-    opacity: 0px; 
+    opacity: 0px;
+    float: left; 
 }
 
 .icon7{
     background: #F5E6FE;
     margin-left: 90px;
-    margin-top: 40px;
     border-radius: 10px !important; 
     width: 40px;
     height: 40px;
     gap: 0px;
     opacity: 0px;
+    float: left;
 }
 
 .icon8{
@@ -347,17 +411,18 @@
     height: 40px;
     gap: 0px;
     opacity: 0px;
+    float: left;
 }
 
 .icon9{
     background: #FFF9DD;
     margin-left: 90px;
-    margin-top: 40px;
     border-radius: 10px !important; 
     width: 40px;
     height: 40px;
     gap: 0px;
     opacity: 0px;
+    float: left;
 }
 
 .icon10{
@@ -368,17 +433,18 @@
     height: 40px;
     gap: 0px;
     opacity: 0px;
+    float: left;
 }
 
 .icon11{
     background: #FFE6E2;
     margin-left: 90px;
-    margin-top: 40px;
     border-radius: 10px !important; 
     width: 40px;
     height: 40px;
     gap: 0px;
     opacity: 0px;
+    float: left;
 }
 
 .icon12{
@@ -389,17 +455,18 @@
     height: 40px;
     gap: 0px;
     opacity: 0px;
+    float: left;
 }
 
 .icon13{
     background: #FFF9DD;
     margin-left: 90px;
-    margin-top: 40px;
     border-radius: 10px !important; 
     width: 40px;
     height: 40px;
     gap: 0px;
     opacity: 0px;
+    float: left;
 }
 
 .program2{
@@ -407,7 +474,7 @@
 }
 
 .head{
-    margin-top: 50px;
+    margin-top: 60px;
     margin-left: 20px;
     font-family: Figtree;
     font-size: 24px;
@@ -429,7 +496,7 @@
 }
 
 .head1{
-    margin-top: -50px;
+    margin-top: 60px;
     margin-left: 150px;
     font-family: Figtree;
     font-size: 24px;
@@ -450,7 +517,6 @@
 }
 
 .head3{
-    margin-top: -50px;
     margin-left: 150px;
     font-family: Figtree;
     font-size: 24px;
@@ -491,29 +557,42 @@
     color: #000000;
 }
 
-.galeri {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-.gambar7, .gambar8 {
-    width: calc(50% - 10px);
-    height: auto;
-    border-radius: 20px 0px 0px 0px;
+.gambar7{
+    width: 50%; /* Menyamakan lebar semua gambar */
+    border-radius: 20px;
     opacity: 1;
-    margin-bottom: 20px;
-  }
-  
-.gambar9, .gambar10 {
-    width: calc(50% - 10px);
-    height: auto;
-    border-radius: 20px 0px 0px 0px;
+}
+
+.gambar8{
+    width: 50%; /* Menyamakan lebar semua gambar */ 
+    border-radius: 20px;
     opacity: 1;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-  }
+}
+
+.gambar9{
+    width: 50%; /* Menyamakan lebar semua gambar */ 
+    border-radius: 20px;
+    opacity: 1;
+
+}
+
+.gambar10 {
+    width: 50%; /* Menyamakan lebar semua gambar */
+    height: 100%; /* Mengatur tinggi berdasarkan rasio aspek gambar */
+    border-radius: 20px;
+    opacity: 1;
+}
+
+.btnjadi{
+    margin-top: 200px;
+    border-radius: 30px;
+    height: 50px;
+    width: 80%;
+    background: linear-gradient(270deg, #1EC12E 0%, #4573A7 77.5%);
+    color: white;
+}
+
+/* css footer */
 
 .footer{
     background: linear-gradient(180deg, #276EF1 0%, #2A4B71 100%);
@@ -552,42 +631,716 @@
     padding: 6rem 2rem;   
 }
 
+.pemail{
+    font-family: Figtree;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: left;
+
+}
+
 .email{
     padding: 10px;
     border: none;
     border-radius: 40px;
     outline: none;
-    width: 90%;
-    margin-left: -5px;
+    width: 70%;
+    margin-left: -75px;
     margin-top: 20px;
 }
 
 .btnsubmit{
   position: absolute;
-  margin-left: -125px;
-  margin-top: 22px;
+  margin-left: -120px;
+  margin-top: 25px;
   border-radius: 30px;
-  height: 40px;
-  width: 10%;
+  height: 35px;
+  width: 8%;
   background: linear-gradient(270deg, #1EC12E 0%, #4573A7 77.5%);
   color: white;
 }
 
 .logo1{
-    width: 319px;
-    height: 319px;
+    width: 30%;
+    height: 100%;
+    margin-top: 50px;
     margin-left: 30px;
-    margin-top: 150px;
-    border-radius: 20px;   
+    border-radius: 20px;
+    float: left;   
 }
 
 .pdewan{
-    margin-top: -100px;
-    margin-left: 450px;
+    margin-top: 50px;
+    margin-left: 400px;
+    font-family: Figtree;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 97.2px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.perkumpul{
+    margin-left: 400px;
+    font-family: Figtree;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 28.8px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.alamat{
+    margin-top: 100px;
+    margin-left: 30px;
+    font-family: Figtree;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.8px;
+    text-align: left;
+    color: #FFFFFF;
+
+}
+
+.arrow {
+    display: inline-block;
+    margin-left: 10px;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid #333;
+    border-bottom: 2px solid #333;
+    transform: rotate(-45deg);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .arrow.open {
+    transform: rotate(45deg);
+  }
+
+  .faq-section {
+    padding: 150px;
+    text-align: left;
+  }
+
+  .faq{
+    font-family: Figtree;
+    font-size: 96px;
+    font-weight: 800;
+    line-height: 115.2px;
+    text-align: left;
+    color: #276EF1;
+
+  }
+  
+  .faq-p{
+    font-family: Figtree;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    color: #3AA76D;
+
+  }
+
+  .faq-item {
+    border-bottom: 1px solid #000; /* Change color as needed */
+    padding: 10px 0; /* Add some vertical padding to give space around the text */
+  }
+
+
+  /* css about */
+
+  .about-paragraph{
+    width: 100vw;
     font-family: Figtree;
     font-size: 56px;
     font-weight: 800;
     line-height: 67.2px;
     text-align: left;
-    
+    color : #FFFFFF;
+  }
+
+  .about-paragraph2{
+    width: 50%;
+    font-family: Figtree;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: left;
+    color: #FFFFFF;
+  }
+
+  .container-head{
+    padding: 150px;
+  }
+
+  .head-about{
+    font-family: Figtree;
+    font-size: 66px;
+    font-weight: 800;
+    line-height: 115.2px;
+    text-align: left;
+    color: #276EF1;
+  }
+
+.paragraf-about{
+    font-family: Figtree;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+
 }
+  .bg-tengah{
+    position: relative; 
+    background: linear-gradient(180deg, #FE9311 0%, #F9E313 100%);
+    margin-left: 80vw;
+    margin-top: 200px;
+    height: 300px;
+    border-radius: 50px 0px 0px 50px;
+}
+
+.struktur{  
+  width: 800px;
+  height: 800px;
+
+}
+
+  .gambar11{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 120px;
+    width: 80%;
+    height: 250px;
+    border-radius: 20px;
+    z-index: 2;
+  }
+
+  .paragraph-dpd{ 
+    width: 1000px;
+    position: absolute;
+    margin-top: 100px; /* Adjust this value as needed */
+    margin-left: -450px; /* Adjust this value as needed */
+    transform: translate(-50%, -50%); /* Center the element */
+    z-index: 3;
+    font-family: Figtree;
+    font-size: 96px;
+    font-weight: 900;
+    line-height: 50.2px;
+    text-align: center;
+    color:white;
+  }
+
+  
+  .dpd-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 150px;
+    list-style-type: none;
+    padding: 100px;
+    margin-right: 100px;
+    margin-left: 40px;
+    text-align: center;
+  }
+  
+  .dpd-list li {
+    border-bottom: 1px solid black;
+    padding: 10px;
+  }
+
+  .dpd-list li p{
+    text-align: left;
+  }
+  
+  .dpd-link {
+    text-align: left;
+    display: block;
+    text-decoration: none;
+  }
+  .plus-sign {
+    float: right;
+  }
+
+
+  /* css program */
+
+.program-paragraph{   
+    width: 80vw;
+    margin-left: 100px;
+    font-family: Figtree;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 67.2px;
+    text-align: left;    
+    color: #FFFFFF;
+
+  }
+
+  .program-paragraph2{   
+    width:70vw;
+    margin-left: 100px;
+    font-family: Figtree;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: left;
+    color: #FFFFFF;
+
+  }
+
+  .bg-paragraph{
+    background: linear-gradient(284.05deg, #276EF1 10.59%, #0D5CB6 89.41%);
+    width: 100%;
+    height: 100%;
+  }
+
+  .paragraph-program{
+    padding: 100px;
+    font-family: Figtree;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: #FFFFFF;
+  }
+
+
+  .icon15{
+    margin-top: 10px;
+    margin-left: 100px;
+    border-radius: 10px !important; 
+    width: 40px;
+    height: 40px;
+    float: left;
+    background-color: red;
+
+  }
+
+  .icon16{
+    padding: 100px;
+    width: 100%;
+  }
+
+  .icon17{
+    margin-top: 35px;
+    margin-right: 100px;
+    float: right;
+  }
+
+  .head-map{
+    margin-left: 180px;
+    font-family: Figtree;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 66.5px;
+    text-align: left;
+    color: #276EF1;
+  }
+
+.paragraph-map{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: Figtree;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: #000000;
+}
+
+.gambar12{
+    margin-top: 100px;
+    width: 130vh;
+    height: 800px;
+    border-radius: 50px;
+}
+
+.icon21{
+    background: #E3F8FA;
+    margin-left: 70px;
+    border-radius: 10px !important; 
+    width: 60px;
+    height: 60px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.icon35{
+    width: 50vw;
+    margin-left: 70px;
+}
+
+.fas1{
+    padding: 20px;
+    font-family: Figtree;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    color: #276EF1;
+
+}
+
+.icon22{
+    background: #F5E6FE;
+    margin-top: -40px;
+    margin-left: 70px;
+    border-radius: 10px !important; 
+    width: 60px;
+    height: 60px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.fas2{
+    margin-left: 20px;
+    margin-top: -20px;
+    font-family: Figtree;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    color: #276EF1;
+}
+
+.icon23{
+    background: #FFE6E2;
+    margin-top: -40px;
+    margin-left: 70px;
+    border-radius: 10px !important; 
+    width: 60px;
+    height: 60px;
+    gap: 0px;
+    opacity: 0px; 
+}
+
+.icon25{
+    background: #E3F8FA;
+    margin-top: -40px;
+    margin-left: 70px;
+    border-radius: 10px !important; 
+    width: 60px;
+    height: 60px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.icon26{
+    background: #FFF9DD;
+    margin-top: -40px;
+    margin-left: 70px;
+    border-radius: 10px !important; 
+    width: 60px;
+    height: 60px;
+    gap: 0px;
+    opacity: 0px; 
+}
+
+.icon27{
+    background: #F5E6FE;
+    margin-top: -40px;
+    margin-left: 70px;
+    border-radius: 10px !important; 
+    width: 60px;
+    height: 60px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.icon28{
+    background: #FFE6E2;
+    margin-top: -40px;
+    margin-left: 70px;
+    border-radius: 10px !important; 
+    width: 60px;
+    height: 60px;
+    gap: 0px;
+    opacity: 0px; 
+}
+
+.icon29{
+    background: #FFF9DD;
+    margin-top: -40px;
+    margin-left: 70px;
+    border-radius: 10px !important; 
+    width: 60px;
+    height: 60px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.icon30{
+    background: #E3F8FA;
+    margin-top: -40px;
+    margin-left: 70px;
+    border-radius: 10px !important; 
+    width: 60px;
+    height: 60px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.icon31{
+    background: #FFE6E2;
+    margin-top: -40px;
+    margin-left: 70px;
+    border-radius: 10px !important; 
+    width: 60px;
+    height: 60px;
+    gap: 0px;
+    opacity: 0px; 
+}
+
+.icon32{
+    background: #F5E6FE;
+    margin-top: -40px;
+    margin-left: 70px;
+    border-radius: 10px !important; 
+    width: 60px;
+    height: 60px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.icon33{
+    background: #FFF9DD;
+    margin-top: -40px;
+    margin-left: 70px;
+    border-radius: 10px !important; 
+    width: 60px;
+    height: 60px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.icon34{
+    background: #E3F8FA;
+    margin-top: -40px;
+    margin-left: 70px;
+    border-radius: 10px !important; 
+    width: 60px;
+    height: 60px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+
+.fasilitas-list {
+    list-style-type: none;
+    margin-top: -130px;
+  }
+
+  .fasilitas-item{
+    display: flex;
+    justify-content: left;
+  }
+  
+  .fasilitas-list li {
+    margin-top: 50px;
+  }
+  
+
+  .fasilitas-list{
+    text-align: left;
+  }
+
+  .plus-symbol{
+    float: right;
+    margin-right: 110px;
+    margin-top: -60px;
+    font-size: 2em;
+  }
+
+
+  /* css news? */
+
+  .judul-news{
+    text-align: left;
+    width: 30%;
+    height: 300px;
+    margin-left: 70px;
+    border-radius: 0px 0px 40px 40px;
+    background: linear-gradient(180deg, #FE9311 0%, #F9E313 100%);
+    position: absolute;
+    z-index: -1;
+  }
+
+    .news-paragraph{
+        margin-left: -250px;
+        font-family: Figtree;
+        font-size: 56px;
+        font-weight: 800;
+        line-height: 67.2px;
+        text-align: left;
+        color: #FFFFFF;
+    }
+
+    .news-paragraph2{
+        width: 1000px;
+        margin-left: -250px;
+        font-family: Figtree;
+        font-size: 56px;
+        font-weight: 800;
+        line-height: 67.2px;
+        text-align: left;
+        color: #FFFFFF;
+    }
+
+    .container-news {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .news-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Ini akan membuat 5 kolom */
+        grid-template-rows: repeat(2, 1fr); /* Ini akan membuat 2 baris */
+        grid-gap: 30px;
+        width: 100%;
+        max-width: 1200px; /* Anda bisa mengubah ini sesuai kebutuhan */
+      }
+      
+      .news-item img {
+        margin-top: 100px;
+        width: 500px;
+        height:250px;
+        border-radius: 20px;
+        object-fit: cover; /* Ini akan memastikan gambar tidak melebar */
+      }
+
+      .news-date{
+        margin-top: 20px;
+        margin-left: 50px;
+        font-family: Figtree;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+        color: #F16422;
+      }
+
+      .news-paragraph1{
+        margin-left: 50px;
+        font-family: Figtree;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28.8px;
+        text-align: left;
+        color: #161D37;
+
+      }
+
+      .pagination-center{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+      }
+
+
+      /* css activity */
+
+      .judul-activity{
+        text-align: left;
+        width: 30%;
+        height: 300px;
+        margin-left: 70px;
+        border-radius: 0px 0px 40px 40px;
+        background: linear-gradient(180deg, #059921 0%, #38DB29 100%);  
+        position: absolute;
+        z-index: -1;
+      }
+
+      .activity-paragraph{
+        margin-left: -50px;
+        font-family: Figtree;
+        font-size: 56px;
+        font-weight: 800;
+        line-height: 67.2px;
+        text-align: left;
+        color: #FFFFFF;
+      }
+
+      .activity-paragraph2{
+        margin-left: -50px;
+        width: 1000px;
+        font-family: Figtree;
+        font-size: 56px;
+        font-weight: 800;
+        line-height: 67.2px;
+        text-align: left;
+        color: #FFFFFF;
+      }
+
+      .container-activity {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .activity-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Ini akan membuat 5 kolom */
+        grid-template-rows: repeat(2, 1fr); /* Ini akan membuat 2 baris */
+        grid-gap: 30px;
+        width: 100%;
+        max-width: 1200px; /* Anda bisa mengubah ini sesuai kebutuhan */
+      }
+
+      @media (max-width: 738px) {
+        .activity-grid {
+          grid-template-columns: 1fr; /* Hanya satu kolom pada perangkat dengan lebar viewport kurang dari 600px */
+        }
+      
+        .activity-item img {
+          width: 350px; /* Lebar gambar lebih kecil pada perangkat dengan lebar viewport kurang dari 600px */
+          height: 350px; /* Tinggi gambar lebih kecil pada perangkat dengan lebar viewport kurang dari 600px */
+        }
+      }
+      
+      .activity-item img {
+        margin-top: 100px;
+        width: 500px;
+        height: 500px;
+        border-radius: 20px;
+        object-fit: cover; /* Ini akan memastikan gambar tidak melebar */
+      }
+
+      .activity-date{
+        margin-left: 30px;
+        font-family: Figtree;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+        color: #F16422;
+      }
+
+      .activity-time{
+        margin-left: 30px;
+        font-family: Figtree;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+        color: #F16422;
+      }
+
+      .activity-paragraph1{
+        margin-top: 30px;
+        margin-left: 30px;
+        font-family: Figtree;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28.8px;
+        text-align: left;
+        color: #161D37;
+
+      }
